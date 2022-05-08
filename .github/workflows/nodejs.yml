@@ -36,14 +36,14 @@ jobs:
         run: npm install
         id: install
 
-      - name: Install project dependencies
+      - name: Run project test
         run: npm run test
         id: test
   
-      - name: Install project dependencies
+      - name: Run Browser tests
         run: npm run browser-tests
         id: browser
  
-      - name: Install project dependencies
+      - name: Check for lint issues
         run: npm run lint
         id: lint
